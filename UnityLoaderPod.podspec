@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'Frameworks/UnityLoader.framework'
 
   s.pod_target_xcconfig = {
-    'VALID_ARCHS' => 'arm64 x86_64',
+    'VALID_ARCHS' => 'arm64',
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }
 end
