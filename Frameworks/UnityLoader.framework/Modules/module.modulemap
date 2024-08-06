@@ -1,0 +1,6 @@
+framework module UnityLoader {
+  umbrella header "UnityLoader.h"
+  export *
+
+  module * { export * }
+}

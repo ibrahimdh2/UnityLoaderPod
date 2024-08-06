@@ -1,0 +1,21 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name UnityLoader
+import Foundation
+import Swift
+import UIKit
+import UnityFramework
+@_exported import UnityLoader
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public class UnityLoader {
+  public static var heightData: Swift.String?
+  public static var unityView: UIKit.UIView?
+  public init()
+  public static func loadUnityInstance(_ path: Swift.String = "")
+  public static func quitUnity()
+  public static func getValueFromUnity() -> Swift.Float?
+  public static func listAllDirectoriesInBundle(path: Swift.String)
+  @objc deinit
+}

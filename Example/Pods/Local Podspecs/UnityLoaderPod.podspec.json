@@ -1,0 +1,22 @@
+{
+  "name": "UnityLoaderPod",
+  "version": "0.1.0",
+  "summary": "A short description of UnityLoaderPod.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "..",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "E": ""
+  },
+  "source": {
+    "git": "",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "UnityLoaderPod/Classes/**/*"
+}
