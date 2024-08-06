@@ -4,9 +4,11 @@ Pod::Spec.new do |s|
   s.summary          = 'A pod for loading Unity framework.'
   s.description      = <<-DESC
                        UnityLoaderPod is a CocoaPod that helps in loading Unity framework efficiently.
+                       It simplifies the integration process of UnityLoader and UnityFramework.
                        DESC
 
   s.homepage         = 'https://github.com/ibrahimdh2/UnityLoaderPod'
+
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Ibrahim Nasir' => 'ibrahimdh2@github.com' }
   s.source           = { :git => 'https://github.com/ibrahimdh2/UnityLoaderPod.git', :tag => s.version.to_s }
@@ -14,11 +16,13 @@ Pod::Spec.new do |s|
   s.swift_versions   = '5.0'
   s.ios.deployment_target = '13.0'
 
-  s.source_files     = 'Classes/**/*'
+  s.source_files = 'Classes/**/*'
   s.vendored_frameworks = 'Frameworks/UnityLoader.framework'
 
+    # Exclude all architectures except arm64
+  # Exclude all architectures except arm64
   s.pod_target_xcconfig = {
     'VALID_ARCHS' => 'arm64',
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386 x86_64'
   }
 end
